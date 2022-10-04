@@ -65,10 +65,10 @@ fi
 
 echo -e "\e[1m\e[32m3. Downloading and building binaries... \e[0m" && sleep 1
 # download binary
-cd $HOME
-git clone https://github.com/empowerchain/empowerchain.git
-cd empower-core
-make install
+cd $HOME && git clone https://github.com/empowerchain/empowerchain && \
+cd empowerchain/chain && \
+make install && \
+empowerd version --long | head
 
 # config
 empowerd config chain-id $empower_CHAIN_ID
