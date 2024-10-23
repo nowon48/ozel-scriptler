@@ -35,12 +35,12 @@ if ! command_exists jq; then
 fi
 
 echo "Downloading binaries..."
-wget -q https://github.com/hemilabs/heminetwork/releases/download/v0.4.5/heminetwork_v0.4.5_linux_amd64.tar.gz
+wget -q https://github.com/hemilabs/heminetwork/releases/download/v0.5.0/heminetwork_v0.5.0_linux_amd64.tar.gz
 
 echo "Extracting binaries..."
-tar xvf heminetwork_v0.4.5_linux_amd64.tar.gz
-rm heminetwork_v0.4.5_linux_amd64.tar.gz
-cd heminetwork_v0.4.5_linux_amd64
+tar xvf heminetwork_v0.5.0_linux_amd64.tar.gz
+rm heminetwork_v0.5.0_linux_amd64.tar.gz
+cd heminetwork_v0.5.0_linux_amd64
 
 
 
@@ -65,7 +65,7 @@ Group=$(id -g -n)
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/popmd
 Environment="POPM_BTC_PRIVKEY=$PRIVATE_KEY"
-Environment="POPM_STATIC_FEE=100"
+Environment="POPM_STATIC_FEE=600"
 Environment="POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public"
 Restart=always
 RestartSec=10
