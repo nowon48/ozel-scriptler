@@ -65,7 +65,7 @@ Group=$(id -g -n)
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/popmd
 Environment="POPM_BTC_PRIVKEY=$PRIVATE_KEY"
-Environment="POPM_STATIC_FEE=600"
+Environment="POPM_STATIC_FEE=1500"
 Environment="POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public"
 Restart=always
 RestartSec=10
