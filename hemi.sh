@@ -35,12 +35,12 @@ if ! command_exists jq; then
 fi
 
 echo "Downloading binaries..."
-wget -q https://github.com/hemilabs/heminetwork/releases/download/v0.5.0/heminetwork_v0.5.0_linux_amd64.tar.gz
+wget -q https://github.com/hemilabs/heminetwork/releases/download/v0.7.0/heminetwork_v0.7.0_linux_amd64.tar.gz
 
 echo "Extracting binaries..."
-tar xvf heminetwork_v0.5.0_linux_amd64.tar.gz
-rm heminetwork_v0.5.0_linux_amd64.tar.gz
-cd heminetwork_v0.5.0_linux_amd64
+tar xvf heminetwork_v0.7.0_linux_amd64.tar.gz
+rm heminetwork_v0.7.0_linux_amd64.tar.gz
+cd heminetwork_v0.7.0_linux_amd64
 
 
 
